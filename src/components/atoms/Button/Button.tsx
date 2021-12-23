@@ -4,7 +4,7 @@ import styles from "./Button.module.scss";
 export const button = () => {
   return (
     <div>
-      <button></button>
+      <button className={styles.button}>送信</button>
     </div>
   );
 };

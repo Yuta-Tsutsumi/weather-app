@@ -1,14 +1,15 @@
 import React from "react";
-import { Button } from "./components/atoms/Button/Button";
-import { Input } from "./components/atoms/Input/Input";
-import logo from "./logo.svg";
-import "./App.css";
+import { WeatherApp } from "./components/peges/WeatherApp/WeatherApp";
+import { Temperature } from "./components/molecules/Temperature/Temperature";
+import { Date } from "./components/molecules/Date/Date";
+import styles from "./App.module.scss";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <Button />
-      <Input />
+    <div className={styles.App}>
+      <WeatherApp />
+      <Temperature />
+      <Date />
     </div>
   );
 };

@@ -1,0 +1,19 @@
+.App {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  .WeatherApp {
+    display: flex;
+    .InputTest {
+      margin-right: 1.5em;
+      label {
+        font-weight: bold;
+        margin-right: 260px;
+      }
+    }
+    .InputButton {
+      margin-top: 1.65em;
+    }
+  }
+}

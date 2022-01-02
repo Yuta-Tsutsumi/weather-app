@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./Temperature.module.scss";
+import styles from "./TodayForecast.module.scss";
 
-export const Temperature: React.FC = () => {
+const TodayForecast: React.VFC = () => {
   return (
-    <div className={styles.app}>
+    <div className={styles.root}>
       <div>
         <div className={styles.month}>0月0日 現在時刻</div>
         <div className={styles.position}>現在地</div>
@@ -16,3 +16,5 @@ export const Temperature: React.FC = () => {
     </div>
   );
 };
+
+export default TodayForecast;

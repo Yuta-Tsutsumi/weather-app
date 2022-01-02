@@ -1,14 +1,14 @@
 import React from "react";
 import { Button } from "../../../components/atoms/Button/Button";
 import { Input } from "../../../components/atoms/Input/Input";
-import styles from "./WeatherApp.module.scss";
+import styles from "./SearchForm.module.scss";
 
-export const WeatherApp: React.FC = () => {
+const SearchForm: React.VFC = () => {
   return (
-    <form className={styles.App}>
+    <form className={styles.root}>
+      <label className={styles.label}>都市名</label>
       <div className={styles.WeatherApp}>
         <div className={styles.InputTest}>
-          <label className={styles.label}>都市名</label>
           <Input />
         </div>
         <div className={styles.InputButton}>
@@ -18,3 +18,5 @@ export const WeatherApp: React.FC = () => {
     </form>
   );
 };
+
+export default SearchForm;

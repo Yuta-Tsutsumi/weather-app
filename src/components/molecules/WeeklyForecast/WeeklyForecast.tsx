@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./Date.module.scss";
+import styles from "./WeeklyForecast.module.scss";
 
-export const Date: React.FC = () => {
+const WeeklyForecast: React.VFC = () => {
   return (
     <div className={styles.date}>
       <h1>7日間の予測</h1>
@@ -16,3 +16,5 @@ export const Date: React.FC = () => {
     </div>
   );
 };
+
+export default WeeklyForecast;

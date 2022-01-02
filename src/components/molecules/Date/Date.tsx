@@ -3,7 +3,7 @@ import styles from "./Date.module.scss";
 
 export const Date: React.FC = () => {
   return (
-    <div className={styles.ccc}>
+    <div className={styles.date}>
       <h1>7日間の予測</h1>
       <div>
         <p>4月1日　　0/0℃</p>

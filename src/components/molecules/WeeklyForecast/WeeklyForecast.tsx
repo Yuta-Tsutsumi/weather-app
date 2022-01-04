@@ -3,9 +3,9 @@ import styles from "./WeeklyForecast.module.scss";
 
 const WeeklyForecast: React.VFC = () => {
   return (
-    <div className={styles.date}>
-      <h1>7日間の予測</h1>
-      <div>
+    <div className={styles.root}>
+      <div className={styles.title}>7日間の予測</div>
+      <div className={styles.date}>
         <p>4月1日　　0/0℃</p>
         <p>4月2日　　0/0℃</p>
         <p>4月3日　　0/0℃</p>

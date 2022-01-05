@@ -5,6 +5,7 @@ const HourlyForecastGraph: React.VFC = () => {
   return (
     <div>
       <div className={styles.time}>1時間ごとの予測</div>
+      <div className={styles.HourlyForecastGraph}></div>
     </div>
   );
 };

@@ -1,5 +1,12 @@
 .root {
+  .label {
+    font-size: 0.9em;
+    font-weight: bold;
+  }
   .WeatherApp {
     display: flex;
+    .InputTest {
+      margin-right: 23px;
+    }
   }
 }

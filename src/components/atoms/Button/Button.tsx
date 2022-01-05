@@ -5,7 +5,7 @@ export const Button: React.FC = () => {
   return (
     <div>
       <button className={styles.button} type="submit">
-        送信
+        検索
       </button>
     </div>
   );

@@ -1,4 +1,12 @@
 button {
-  // height: 1em;
-  // width: 1em;
+  padding: 10px 23px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2185d0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9em;
+  &:hover {
+    opacity: 0.8;
+  }
 }

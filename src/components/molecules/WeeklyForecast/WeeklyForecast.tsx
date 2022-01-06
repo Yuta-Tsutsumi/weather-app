@@ -12,6 +12,7 @@ const WeeklyForecast: React.VFC = () => {
         <p>4月4日　　0/0℃</p>
         <p>4月5日　　0/0℃</p>
         <p>4月6日　　0/0℃</p>
+        <p>4月7日　　0/0℃</p>
       </div>
     </div>
   );

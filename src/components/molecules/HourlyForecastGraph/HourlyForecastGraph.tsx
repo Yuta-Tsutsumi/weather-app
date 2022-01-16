@@ -65,7 +65,13 @@ const HourlyForecastGraph: React.VFC = () => {
             <YAxis label={{ value: "気温", angle: -90, position: "left" }} />
             <Tooltip />
             <Legend verticalAlign="top" height={36} />
-            <Line type="monotone" dataKey="気温" stroke="#000" />
+            <Line
+              type="monotone"
+              dataKey="気温"
+              stroke="#48484a"
+              activeDot={{ r: 8 }}
+              strokeWidth={3}
+            />
           </LineChart>
         </ResponsiveContainer>
       </div>

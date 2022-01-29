@@ -2,13 +2,12 @@ import React from "react";
 import styles from "./TodayForecast.module.scss";
 
 const number = 0;
+const string = "現在地";
 const TodayForecast: React.VFC = () => {
   return (
     <div className={styles.root}>
-      <div className={styles.month}>
-        {number}月{number}日 現在時刻
-      </div>
-      <div className={styles.position}>現在地</div>
+      <div className={styles.month}>{`${number}月${number}日 現在時刻`}</div>
+      <div className={styles.position}>{string}</div>
       <div className={styles.thermo}>{number}℃</div>
       <div className={styles.roughTemperature}>
         <div className={styles.temperature}>

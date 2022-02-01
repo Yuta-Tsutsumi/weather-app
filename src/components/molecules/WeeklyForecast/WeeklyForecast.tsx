@@ -17,5 +17,4 @@ const WeeklyForecast: React.VFC = () => {
     </div>
   );
 };
-
 export default WeeklyForecast;

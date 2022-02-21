@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { geocoding } from "../../../api/geocoding";
 import { fetchTodayForecast } from "../../../api/openWeather";
 import styles from "./SearchForm.module.scss";
 
@@ -18,6 +19,7 @@ const SearchForm: React.VFC = () => {
       console.log({ location });
 
       // 入力された場所の緯度経度を取得する
+      const geocodingRes = await geocoding(location);
 
       // 緯度経度を元に、その場所の天気情報を取得する
 

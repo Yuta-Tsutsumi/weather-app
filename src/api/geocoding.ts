@@ -1,4 +1,3 @@
-// axiosをimport
 import axios from "axios";
 
 // GoogleMapが提供している以下のエンドポイントを叩いて、住所から緯度/経度を取得する関数を作成する

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-// GoogleMapが提供している以下のエンドポイントを叩いて、住所から緯度/経度を取得する関数を作成する
+// Google Mapが提供している以下のエンドポイントを叩いて、住所から緯度/経度を取得する関数を作成する
 // APIのドキュメントURL：https://developers.google.com/maps/documentation/geocoding/start
 // APIエンドポイント：https://maps.googleapis.com/maps/api/geocode/json
 export const geocoding = async (address: string) => {

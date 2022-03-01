@@ -9,6 +9,7 @@ export const geocoding = async (address: string) => {
   try {
     const endpoint = "https://maps.googleapis.com/maps/api/geocode/json";
     const apiKey = "";
+    //const response = await axios.get("URLを入力すること");
     const response = await axios.get(endpoint, {
       params: { address: address, key: apiKey },
     });

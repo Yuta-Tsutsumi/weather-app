@@ -12,7 +12,8 @@ export const geocoding = async (address: string) => {
     const apiKey = "AIzaSyAyNK_v7dQRY9UYhDVLGAs_rUrw6bZ7PKA";
     //const response = await axios.get("URLを入力すること");
     const response = await axios.get(endpoint, {
-      params: { address: address, key: apiKey },
+      params: { address, key: apiKey },
+      //↑「address: address」を省略し、「address」と記入している。
     });
     //catch文はHTTP通信が失敗した場合の処理を書く。alertで写真の取得に失敗しました。と表示。
     console.log(response);

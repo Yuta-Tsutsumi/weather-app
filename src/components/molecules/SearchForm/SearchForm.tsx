@@ -11,7 +11,8 @@ const SearchForm: React.VFC = () => {
   // 検索ボタンが押されたときに発火する関数
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     try {
-      // デフォルトではページ全体をリロードしてしまうので、event.preventDefaultメソッドを使って、submitイベントの発生元であるフォームが持つデフォルトの動作（リロード）をキャンセルするメソッドです。
+      // デフォルトではページ全体をリロードしてしまうので、event.preventDefaultメソッドを使って、
+      //submitイベントの発生元であるフォームが持つデフォルトの動作（リロード）をキャンセルするメソッドです。
       // https://qiita.com/yokoto/items/27c56ebc4b818167ef9e
       e.preventDefault();
 

@@ -9,16 +9,29 @@ export const geocoding = async (address: string) => {
   try {
     const endpoint = "https://maps.googleapis.com/maps/api/geocode/json";
     //ジオコードのAPIキー
-    const apiKey = "AIzaSyAyNK_v7dQRY9UYhDVLGAs_rUrw6bZ7PKA";
+    const apiKey = "AIzaSyAntz8OQsFZfMOtTLMSQvUnYRFlmSRRAwA";
     //const response = await axios.get("URLを入力すること");
     const response = await axios.get(endpoint, {
       params: { address, key: apiKey },
       //↑「address: address」を省略し、「address」と記入している。
     });
-    //catch文はHTTP通信が失敗した場合の処理を書く。alertで写真の取得に失敗しました。と表示。
+    //14行目から17行目の値のresponseを返している。
     console.log(response);
+
+    // 緯度・経度をresponseから抽出
+    // コンソール画面から参照してデータの位置にたどり着く
+    const location = response.data.results[0].geometry.location;
+
+    // 緯度・経度を返却する
+    return location;
   } catch (error) {
+    //catch文はHTTP通信が失敗した場合の処理を書く。alertで写真の取得に失敗しました。と表示。
     console.error(error);
     alert("住所から緯度/経度の取得に失敗しました");
+    console.log(error);
   }
 };
+
+const results = ["tsutsumi", "abe"];
+
+const userName = results[0];

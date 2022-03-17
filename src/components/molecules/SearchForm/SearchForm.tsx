@@ -21,9 +21,9 @@ const SearchForm: React.VFC = () => {
 
       // 入力された場所の緯度経度を取得する
       const geocodingRes = await geocoding(location);
+      console.log({ geocodingRes });
 
       // 緯度経度を元に、その場所の天気情報を取得する
-
       // const todayForecast = await fetchTodayForecast();
       // console.log({ todayForecast });
     } catch (err) {

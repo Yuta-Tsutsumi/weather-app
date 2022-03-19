@@ -19,7 +19,7 @@ export const geocoding = async (address: string) => {
     console.log(response);
 
     // 緯度・経度をresponseから抽出
-    // コンソール画面から参照してデータの位置にたどり着く
+    // 検証からコンソール画面にいったときの参照データの階層
     const location = response.data.results[0].geometry.location;
 
     // 緯度・経度を返却する
@@ -31,7 +31,3 @@ export const geocoding = async (address: string) => {
     console.log(error);
   }
 };
-
-const results = ["tsutsumi", "abe"];
-
-const userName = results[0];

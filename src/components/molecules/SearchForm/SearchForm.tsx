@@ -31,6 +31,8 @@ const SearchForm: React.VFC = () => {
     }
   };
 
+  // lat=33.44&lon=-94.04&exclude=hourly,daily&appid={API key} ← あってる？
+
   return (
     <form onSubmit={(e) => handleSubmit(e)} className={styles.root}>
       <label className={styles.label}>都市名</label>

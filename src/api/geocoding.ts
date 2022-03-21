@@ -31,3 +31,5 @@ export const geocoding = async (address: string) => {
     console.log(error);
   }
 };
+
+//ユーズステートを書き込むの？

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import { geocoding } from "../../../api/geocoding";
 import { fetchTodayForecast } from "../../../api/openWeather";
 import styles from "./SearchForm.module.scss";
@@ -24,14 +25,24 @@ const SearchForm: React.VFC = () => {
       console.log({ geocodingRes });
 
       // 緯度経度を元に、その場所の天気情報を取得する
+      const weatherInfoRes = await axios.get(
+        "https://api.openweathermap.org/data/2.5/onecall",
+        {
+          params: {
+            appId: "c6a862db0ad7ac1360b43d3dff990690",
+            lat: geocodingRes.lat,
+            lon: geocodingRes.lng,
+          },
+        }
+      );
+      console.log({ weatherInfoRes });
+
       // const todayForecast = await fetchTodayForecast();
       // console.log({ todayForecast });
     } catch (err) {
       alert("天気情報の取得に失敗しました");
     }
   };
-
-  // lat=33.44&lon=-94.04&exclude=hourly,daily&appid={API key} ← あってる？
 
   return (
     <form onSubmit={(e) => handleSubmit(e)} className={styles.root}>

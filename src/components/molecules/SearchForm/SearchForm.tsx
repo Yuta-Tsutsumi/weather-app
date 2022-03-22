@@ -29,7 +29,9 @@ const SearchForm: React.VFC = () => {
         "https://api.openweathermap.org/data/2.5/onecall",
         {
           params: {
+            //APIキー
             appId: "c6a862db0ad7ac1360b43d3dff990690",
+            //
             lat: geocodingRes.lat,
             lon: geocodingRes.lng,
           },

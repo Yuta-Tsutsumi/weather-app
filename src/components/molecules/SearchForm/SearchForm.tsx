@@ -29,10 +29,13 @@ const SearchForm: React.VFC = () => {
         "https://api.openweathermap.org/data/2.5/onecall",
         {
           params: {
+            //必要と書いてあるappid、lat, lonは必ず記載する事
+            //https://openweathermap.org/api/one-call-api#data
             //APIキー
             appId: "c6a862db0ad7ac1360b43d3dff990690",
-            //
+            //コンソールの中のgeocodingResにあるlat（経度）を記入
             lat: geocodingRes.lat,
+            //コンソールの中のgeocodingResにあるlng（緯度）を記入
             lon: geocodingRes.lng,
           },
         }
